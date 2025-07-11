@@ -1,32 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Para Ela</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para Ela</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: black;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 2rem;
+      text-align: center;
+    }
+    input {
+      background: black;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      font-family: monospace;
+      font-size: 1rem;
+      padding: 0.3rem 0.5rem;
+      margin: 0.3rem 0;
+    }
+    button {
+      background: #004400;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      font-family: monospace;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 0.3rem 1rem;
+      margin-top: 1rem;
+    }
+    button:hover {
+      background: #007700;
+    }
+    #secret-message {
+      display: none;
+      margin-top: 2rem;
+      font-family: monospace;
+      color: #0f0;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #0f0;
+      padding: 1rem;
+    }
+    #hidden-form {
+      margin-top: 2rem;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+    p.hint {
+      font-size: 0.9rem;
+      color: #0f0;
+      font-style: italic;
+      margin-top: 0.3rem;
+    }
+  </style>
 </head>
 <body>
-    <div id="logo">PARA ELA</div>
 
-    <div id="terminal">
-        <p>04/09/2146 — Transmissão interceptada…</p>
-        <p>Para Ela:</p>
-        <p>Se você está lendo isto, significa que minha mensagem conseguiu atravessar.</p>
-        <p>Eu não posso dizer onde estou, nem como consegui falar com você.</p>
-        <p>Só posso dizer que ainda penso em você todos os dias… e que ainda há esperança.</p>
-        <p>O canal que abrimos entre nós está escondido, assim como você me ensinou a esconder tudo.</p>
-        <p>Você saberá onde clicar. Você saberá a senha.</p>
-        <p>Nosso segredo nunca mudará: ele sempre foi… <span id="cursor">_</span></p>
-    </div>
+  <h1>Para Ela</h1>
+  <p>Nem tudo que se perde está perdido.</p>
+  <p class="hint">O nome certo e a senha escondida revelam o caminho.</p>
 
-    <form id="hidden-form">
-        <input type="text" placeholder="Nome">
-        <input type="password" placeholder="Senha">
-        <button type="submit">Entrar</button>
-    </form>
+  <form id="hidden-form">
+    <label for="username">Nome:</label><br />
+    <input type="text" id="username" name="username" autocomplete="off" required /><br />
+    <label for="password">Senha:</label><br />
+    <input type="password" id="password" name="password" required /><br />
+    <button type="submit">Entrar</button>
+  </form>
 
-    <marquee>Signal: unstable | UTC 2146-09-04 22:51</marquee>
+  <div id="secret-message">
+    <h2>Você encontrou o que buscava.</h2>
+    <p>As memórias se revelam para quem sabe olhar.</p>
+  </div>
 
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
