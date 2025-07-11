@@ -1,45 +1,31 @@
 body {
-    background: black url('../stars.gif') repeat;
-    color: #00FF00;
-    font-family: "Courier New", monospace;
-    font-size: 14px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  background: black;
+  color: #00ff00;
+  font-family: monospace;
+  text-align: center;
+  padding: 2rem;
 }
 
-#logo {
-    font-size: 24px;
-    margin: 20px 0;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px #00FF00;
+h1 {
+  margin-bottom: 2rem;
 }
 
-#terminal {
-    margin: 20px auto;
-    max-width: 600px;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #00FF00;
-    background: rgba(0,0,0,0.8);
+form {
+  margin-top: 2rem;
 }
 
-#hidden-form {
-    display: none;
-    margin: 20px auto;
+input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: #111;
+  color: #0f0;
+  border: 1px solid #0f0;
 }
 
-#hidden-form input {
-    background: black;
-    color: #00FF00;
-    border: 1px solid #00FF00;
-    padding: 5px;
-    margin: 5px;
-}
-
-#hidden-form button {
-    background: black;
-    color: #00FF00;
-    border: 1px solid #00FF00;
-    padding: 5px 10px;
+button {
+  padding: 0.5rem 1rem;
+  background: #111;
+  color: #0f0;
+  border: 1px solid #0f0;
+  cursor: pointer;
 }
