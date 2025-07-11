@@ -1,65 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Para Ela</title>
-<link rel="stylesheet" href="styles.css" />
-<style>
-  #hidden-form {
-    display: none;
-    margin-top: 2rem;
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-  }
-  a.reveal-link {
-    color: #0f0;
-    cursor: pointer;
-    text-decoration: underline;
-  }
-</style>
-<!-- Pistas no comentário -->
-<!-- Usuário: ZWxhcmE= (base64 de "elara") -->
-<!-- Senha: cXVpbm4yMTQ2 (base64 de "quinn2146") -->
+<meta charset="UTF-8">
+<title>04/09/2146 — Transmission intercepted…</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>04/09/2146 — Transmissão interceptada…</h1>
+<h1>04/09/2146 — Transmission intercepted…</h1>
 
-<p>Para Ela:</p>
+<p>
+To Her:
+</p>
 
-<p>Se você está lendo isto, significa que minha mensagem conseguiu atravessar.</p>
+<p>
+If you’re reading this, it means my message got through.
+</p>
 
-<p>Eu não posso dizer onde estou, nem como consegui falar com você.</p>
+<p>
+I can’t tell you where I am, or how I managed to speak to you.
+</p>
 
-<p>Só posso dizer que ainda penso em você todos os dias… e que ainda há esperança.</p>
+<p>
+I can only say that I still think about you every day… and that there is still hope.
+</p>
 
-<p>O canal que abrimos entre nós está escondido, assim como você me ensinou a esconder tudo.</p>
+<p>
+The channel we opened between us is hidden, just like you taught me to hide everything.
+</p>
 
-<p>Você saberá onde <a id="showForm" class="reveal-link">clicar</a>. Você saberá a senha.</p>
+<p>
+You will know where to click. You will know the password.<br>
+Our secret never changed: it always was…
+</p>
 
-<p>Nosso segredo nunca mudará: ele sempre foi… <em>_</em></p>
-
-<form id="hidden-form">
-  <label for="username">Nome:</label><br />
-  <input type="text" id="username" name="username" autocomplete="off" required /><br />
-  <label for="password">Senha:</label><br />
-  <input type="password" id="password" name="password" required /><br />
-  <button type="submit">Entrar</button>
+<form id="loginForm">
+  <input type="text" id="username" name="username" placeholder="Username" required>
+  <input type="password" id="password" name="password" placeholder="Password" required>
+  <button type="submit">Enter</button>
 </form>
 
-<script>
-  // mostrar o form quando clica no link
-  document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('showForm').addEventListener('click', function () {
-      document.getElementById('hidden-form').style.display = 'block';
-      this.style.display = 'none';
-    });
-  });
-</script>
-
 <script src="main.js"></script>
+
 </body>
 </html>
