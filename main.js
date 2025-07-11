@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (username === validUser && password === validPass) {
       alert('Login autorizado. Bem-vinda, ' + username + '!');
-      window.location.href = 'segredo.html';
+      setTimeout(() => {
+        window.location.href = 'segredo.html';
+      }, 500); // pequena pausa para mostrar o alerta
     } else {
       alert('Nome ou senha incorretos. Tente novamente.');
     }
