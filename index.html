@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Para Ela</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    #hidden-form {
+      display: none;
+      margin-top: 2rem;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    a.reveal-link {
+      color: #0f0;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  </style>
   <!-- Pistas no comentário -->
   <!-- Usuário: ZWxhcmE= (base64 de "elara") -->
   <!-- Senha: cXVpbm4yMTQ2 (base64 de "quinn2146") -->
@@ -22,11 +37,11 @@
 
   <p>O canal que abrimos entre nós está escondido, assim como você me ensinou a esconder tudo.</p>
 
-  <p>Você saberá onde clicar. Você saberá a senha.</p>
+  <p>Você saberá onde <a class="reveal-link" id="showForm">clicar</a>. Você saberá a senha.</p>
 
   <p>Nosso segredo nunca mudará: ele sempre foi… <em>_</em></p>
 
-  <form id="hidden-form" style="margin-top: 2rem; max-width: 320px; margin-left: auto; margin-right: auto; text-align: left;">
+  <form id="hidden-form">
     <label for="username">Nome:</label><br />
     <input type="text" id="username" name="username" autocomplete="off" required /><br />
     <label for="password">Senha:</label><br />
@@ -35,5 +50,12 @@
   </form>
 
   <script src="main.js"></script>
+  <script>
+    document.getElementById('showForm').addEventListener('click', function() {
+      const form = document.getElementById('hidden-form');
+      form.style.display = form.style.display === 'block' ? 'none' : 'block';
+      this.style.display = 'none'; // Esconde o link depois do clique
+    });
+  </script>
 </body>
 </html>
